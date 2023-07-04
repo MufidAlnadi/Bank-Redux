@@ -1,17 +1,20 @@
-import Footer from "./components/Footer";
-import Nav from "./components/Nav";
-import Table from "./table";
+import { useState } from 'react'
 
+import './App.css'
+import { Nav } from './components/Nav'
+import { Footer } from './components/Footer'
+import { Main } from './components/Main'
 function App() {
-	return (
-		<>
-      <Nav/>
-			<h1>Bank App</h1>
-			
-      <Table/>
-			<Footer/>
-		</>
-	);
+ 
+
+  return (
+    <div className='flex flex-col h-screen'>
+    <Nav/>
+    <Main/>
+  <Footer/>
+
+    </div>
+  )
 }
 
-export default App;
+export default App

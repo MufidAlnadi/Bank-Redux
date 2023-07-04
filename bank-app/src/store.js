@@ -1,8 +1,7 @@
 import { configureStore } from '@reduxjs/toolkit'
-import bankReducer from './slice';
-
+import bankReducer from './bank/bankSlice';
 export default configureStore({
-    reducer: {
-      bank: bankReducer,
-    },
-  })
+  reducer: {
+    bank:bankReducer,
+  },
+})
